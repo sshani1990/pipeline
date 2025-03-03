@@ -1,0 +1,57 @@
+# Site
+logo: 'assets/images/logo.png'
+favicon: 'assets/images/favicon.png'
+baseurl: ''
+include: ["_pages"]
+permalink: /:title/
+
+# Authors
+authors:
+  AmanGupta:
+    name: AmanGupta
+    display_name: Aman Gupta
+    gravatar: e56154546cf4be74e393c62d1ae9f9d4
+    email: aman.devsecops@gmail.com
+    twitter: https://www.linkedin.com/in/amangupta777/
+    web: https://devopsinsiders.com
+    description: "Aman Gupta is the author of the DevOps Insiders Blog. With a passion for DevSecOps, Aman shares insights and tutorials to help organizations achieve their DevOps transformation goals. Connect with him on LinkedIn for the latest updates and discussions."
+
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-archives
+    
+# Archives
+jekyll-archives:
+  enabled:
+    - categories
+  layout: archive
+  permalinks:
+    category: '/category/:name/'
+    
+# Pagination 
+paginate: 6
+paginate_path: /page:num/
+    
+# Other
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
+
+# Adsense (change to "enabled" to activate, also your client id and ad slot. Create a new ad unit from your Adsense account to get the slot.)
+adsense: "disabled"
+adsense-data-ad-client: "ca-pub-3412143450191416"
+adsense-data-ad-slot: "1363087678"
+
+# Lazy Images ("enabled" or "disabled")
+lazyimages: "disabled"
+
+exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock]
